@@ -1,19 +1,8 @@
-import { notFound } from "next/navigation";
-
-const posts = {
-  "meme-psychology": { title: "Meme Psychology", content: "..." },
-  "perfect-brat-aesthetic": { title: "Perfect Brat Aesthetic", content: "..." },
-  "the-rise-of-brat-culture": { title: "The Rise of Brat Culture", content: "..." },
-};
-
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = posts[params.slug];
-  if (!post) return notFound();
-
+export default function Home() {
   return (
     <div>
-      <h1>{post.title}</h1>
-      <div>{post.content}</div>
+      <h1>Brat Generator 首页</h1>
+      <p>欢迎来到 Brat Generator！</p>
     </div>
   );
 }
