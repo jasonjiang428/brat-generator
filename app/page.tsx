@@ -1,3 +1,9 @@
+// Just a test change
 export default function Home() {
-  return <div>Hello, world!</div>
+  return (
+    <>
+      {/* Hello, Brat Generator! */}
+      <div>Hello, Brat Generator!</div>
+    </>
+  );
 }
