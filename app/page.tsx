@@ -10,20 +10,16 @@ import { AdBanner } from "@/components/ad-banner"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-green-50">
+    <>
       <Header />
+      <HeroSection />
       <AdBanner position="top" />
-
-      <main className="container mx-auto px-4 py-8 space-y-16">
-        <HeroSection />
-        <GeneratorTool />
-        <HowItWorks />
-        <Gallery />
-        <BlogSection />
-        <AboutSection />
-      </main>
-
+      <GeneratorTool />
+      <HowItWorks />
+      <Gallery />
+      <BlogSection />
+      <AboutSection />
       <Footer />
-    </div>
+    </>
   )
 }
